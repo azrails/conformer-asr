@@ -2,22 +2,22 @@ version = 1
 revision = 3
 requires-python = ">=3.13"
 resolution-markers = [
-    "(platform_machine != 'aarch64' and extra != 'extra-13-conformer-asr-cpu' and extra != 'extra-13-conformer-asr-cu126' and extra != 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform != 'linux' and extra != 'extra-13-conformer-asr-cpu' and extra != 'extra-13-conformer-asr-cu126' and extra != 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130')",
-    "platform_machine == 'aarch64' and sys_platform == 'linux' and extra != 'extra-13-conformer-asr-cpu' and extra != 'extra-13-conformer-asr-cu126' and extra != 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130'",
-    "(platform_machine != 'aarch64' and extra != 'extra-13-conformer-asr-cpu' and extra != 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128' and extra != 'extra-13-conformer-asr-cu130') or (sys_platform != 'linux' and extra != 'extra-13-conformer-asr-cpu' and extra != 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128' and extra != 'extra-13-conformer-asr-cu130')",
-    "platform_machine == 'aarch64' and sys_platform == 'linux' and extra != 'extra-13-conformer-asr-cpu' and extra != 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128' and extra != 'extra-13-conformer-asr-cu130'",
-    "(platform_machine != 'aarch64' and extra != 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126' and extra != 'extra-13-conformer-asr-cu128' and extra != 'extra-13-conformer-asr-cu130') or (sys_platform != 'linux' and extra != 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126' and extra != 'extra-13-conformer-asr-cu128' and extra != 'extra-13-conformer-asr-cu130')",
-    "platform_machine == 'aarch64' and sys_platform == 'linux' and extra != 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126' and extra != 'extra-13-conformer-asr-cu128' and extra != 'extra-13-conformer-asr-cu130'",
-    "(platform_machine != 'aarch64' and sys_platform == 'linux' and extra == 'extra-13-conformer-asr-cpu' and extra != 'extra-13-conformer-asr-cu126' and extra != 'extra-13-conformer-asr-cu128' and extra != 'extra-13-conformer-asr-cu130') or (sys_platform != 'darwin' and sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cpu' and extra != 'extra-13-conformer-asr-cu126' and extra != 'extra-13-conformer-asr-cu128' and extra != 'extra-13-conformer-asr-cu130')",
-    "platform_machine == 'aarch64' and sys_platform == 'linux' and extra == 'extra-13-conformer-asr-cpu' and extra != 'extra-13-conformer-asr-cu126' and extra != 'extra-13-conformer-asr-cu128' and extra != 'extra-13-conformer-asr-cu130'",
-    "sys_platform == 'darwin' and extra == 'extra-13-conformer-asr-cpu' and extra != 'extra-13-conformer-asr-cu126' and extra != 'extra-13-conformer-asr-cu128' and extra != 'extra-13-conformer-asr-cu130'",
-    "extra != 'extra-13-conformer-asr-cpu' and extra != 'extra-13-conformer-asr-cu126' and extra != 'extra-13-conformer-asr-cu128' and extra != 'extra-13-conformer-asr-cu130'",
+    "(python_full_version >= '3.15' and extra != 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra != 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra != 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra != 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130')",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux' and extra != 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130'",
+    "(python_full_version >= '3.15' and extra != 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra != 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra != 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra != 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130')",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux' and extra != 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130'",
+    "(python_full_version >= '3.15' and extra != 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra != 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra != 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra != 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130')",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux' and extra != 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130'",
+    "(python_full_version >= '3.15' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130') or (sys_platform != 'darwin' and sys_platform != 'linux' and extra == 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130')",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130'",
+    "sys_platform == 'darwin' and extra == 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130'",
+    "extra != 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra != 'extra-9-zipformer-cu128' and extra != 'extra-9-zipformer-cu130'",
 ]
 conflicts = [[
-    { package = "conformer-asr", extra = "cpu" },
-    { package = "conformer-asr", extra = "cu126" },
-    { package = "conformer-asr", extra = "cu128" },
-    { package = "conformer-asr", extra = "cu130" },
+    { package = "zipformer", extra = "cpu" },
+    { package = "zipformer", extra = "cu126" },
+    { package = "zipformer", extra = "cu128" },
+    { package = "zipformer", extra = "cu130" },
 ]]
 
 [[package]]
@@ -36,69 +36,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/d8/53/6f443c9a4a8358a93a6792e2acffb9d9d5cb0a5cfd8802644b7b1c9a02e4/colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44", size = 27697, upload-time = "2022-10-25T02:36:22.414Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6", size = 25335, upload-time = "2022-10-25T02:36:20.889Z" },
-]
-
-[[package]]
-name = "conformer-asr"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "einops" },
-]
-
-[package.optional-dependencies]
-cpu = [
-    { name = "torch", version = "2.9.1", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(sys_platform == 'darwin' and extra == 'extra-13-conformer-asr-cpu') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130')" },
-    { name = "torch", version = "2.9.1+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(sys_platform != 'darwin' and extra == 'extra-13-conformer-asr-cpu') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130')" },
-    { name = "torchaudio", version = "2.9.1", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(platform_machine == 'aarch64' and sys_platform == 'linux' and extra == 'extra-13-conformer-asr-cpu') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform == 'darwin' and extra == 'extra-13-conformer-asr-cpu') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform == 'darwin' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (sys_platform == 'darwin' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform == 'darwin' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130') or (extra != 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (extra != 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (extra != 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130')" },
-    { name = "torchaudio", version = "2.9.1+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(platform_machine != 'aarch64' and sys_platform == 'linux' and extra == 'extra-13-conformer-asr-cpu') or (sys_platform != 'darwin' and sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cpu') or (sys_platform == 'darwin' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (sys_platform == 'darwin' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (sys_platform == 'darwin' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform == 'darwin' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (sys_platform == 'darwin' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform == 'darwin' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform == 'linux' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (sys_platform == 'linux' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (sys_platform == 'linux' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (extra != 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (extra != 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (extra != 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130')" },
-]
-cu126 = [
-    { name = "torch", version = "2.9.1+cu126", source = { registry = "https://download.pytorch.org/whl/cu126" } },
-    { name = "torchaudio", version = "2.9.1", source = { registry = "https://download.pytorch.org/whl/cu126" }, marker = "(platform_machine == 'aarch64' and sys_platform == 'linux' and extra == 'extra-13-conformer-asr-cu126') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (extra != 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130')" },
-    { name = "torchaudio", version = "2.9.1+cu126", source = { registry = "https://download.pytorch.org/whl/cu126" }, marker = "(platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cu126') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cu126') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130')" },
-]
-cu128 = [
-    { name = "torch", version = "2.9.1+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" } },
-    { name = "torchaudio", version = "2.9.1", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "(platform_machine == 'aarch64' and sys_platform == 'linux' and extra == 'extra-13-conformer-asr-cu128') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130')" },
-    { name = "torchaudio", version = "2.9.1+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "(platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cu128') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130')" },
-]
-cu130 = [
-    { name = "torch", version = "2.9.1+cu130", source = { registry = "https://download.pytorch.org/whl/cu130" } },
-    { name = "torchaudio", version = "2.9.1", source = { registry = "https://download.pytorch.org/whl/cu130" }, marker = "(platform_machine == 'aarch64' and sys_platform == 'linux' and extra == 'extra-13-conformer-asr-cu130') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130')" },
-    { name = "torchaudio", version = "2.9.1+cu130", source = { registry = "https://download.pytorch.org/whl/cu130" }, marker = "(platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform != 'linux' and extra != 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform != 'linux' and extra != 'extra-13-conformer-asr-cpu' and extra != 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130')" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "hypothesis" },
-    { name = "pre-commit" },
-    { name = "pyright" },
-    { name = "pytest" },
-    { name = "ruff" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "einops", specifier = ">=0.8.1" },
-    { name = "torch", marker = "extra == 'cpu'", specifier = ">=2.8.0", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "conformer-asr", extra = "cpu" } },
-    { name = "torch", marker = "extra == 'cu126'", specifier = ">=2.8.0", index = "https://download.pytorch.org/whl/cu126", conflict = { package = "conformer-asr", extra = "cu126" } },
-    { name = "torch", marker = "extra == 'cu128'", specifier = ">=2.8.0", index = "https://download.pytorch.org/whl/cu128", conflict = { package = "conformer-asr", extra = "cu128" } },
-    { name = "torch", marker = "extra == 'cu130'", specifier = ">=2.8.0", index = "https://download.pytorch.org/whl/cu130", conflict = { package = "conformer-asr", extra = "cu130" } },
-    { name = "torchaudio", marker = "extra == 'cpu'", specifier = ">=2.9.0", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "conformer-asr", extra = "cpu" } },
-    { name = "torchaudio", marker = "extra == 'cu126'", specifier = ">=2.9.0", index = "https://download.pytorch.org/whl/cu126", conflict = { package = "conformer-asr", extra = "cu126" } },
-    { name = "torchaudio", marker = "extra == 'cu128'", specifier = ">=2.9.0", index = "https://download.pytorch.org/whl/cu128", conflict = { package = "conformer-asr", extra = "cu128" } },
-    { name = "torchaudio", marker = "extra == 'cu130'", specifier = ">=2.9.0", index = "https://download.pytorch.org/whl/cu130", conflict = { package = "conformer-asr", extra = "cu130" } },
-]
-provides-extras = ["cpu", "cu126", "cu128", "cu130"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "hypothesis", specifier = ">=6.148.2" },
-    { name = "pre-commit", specifier = ">=4.4.0" },
-    { name = "pyright", specifier = ">=1.1.407" },
-    { name = "pytest", specifier = ">=9.0.1" },
-    { name = "ruff", specifier = ">=0.14.5" },
 ]
 
 [[package]]
@@ -273,8 +210,8 @@ name = "nvidia-cublas-cu12"
 version = "12.6.4.1"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/af/eb/ff4b8c503fa1f1796679dce648854d58751982426e4e4b37d6fce49d259c/nvidia_cublas_cu12-12.6.4.1-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:08ed2686e9875d01b58e3cb379c6896df8e76c75e0d4a7f7dace3d7b6d9ef8eb", size = 393138322, upload-time = "2024-11-20T17:40:25.65Z" },
@@ -287,8 +224,8 @@ name = "nvidia-cublas-cu12"
 version = "12.8.4.1"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/29/99/db44d685f0e257ff0e213ade1964fc459b4a690a73293220e98feb3307cf/nvidia_cublas_cu12-12.8.4.1-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:b86f6dd8935884615a0683b663891d43781b819ac4f2ba2b0c9604676af346d0", size = 590537124, upload-time = "2025-03-07T01:43:53.556Z" },
@@ -311,8 +248,8 @@ name = "nvidia-cuda-cupti-cu12"
 version = "12.6.80"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e6/8b/2f6230cb715646c3a9425636e513227ce5c93c4d65823a734f4bb86d43c3/nvidia_cuda_cupti_cu12-12.6.80-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:166ee35a3ff1587f2490364f90eeeb8da06cd867bd5b701bf7f9a02b78bc63fc", size = 8236764, upload-time = "2024-11-20T17:35:41.03Z" },
@@ -327,8 +264,8 @@ name = "nvidia-cuda-cupti-cu12"
 version = "12.8.90"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d5/1f/b3bd73445e5cb342727fd24fe1f7b748f690b460acadc27ea22f904502c8/nvidia_cuda_cupti_cu12-12.8.90-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:4412396548808ddfed3f17a467b104ba7751e6b58678a4b840675c56d21cf7ed", size = 9533318, upload-time = "2025-03-07T01:40:10.421Z" },
@@ -351,8 +288,8 @@ name = "nvidia-cuda-nvrtc-cu12"
 version = "12.6.77"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f4/2f/72df534873235983cc0a5371c3661bebef7c4682760c275590b972c7b0f9/nvidia_cuda_nvrtc_cu12-12.6.77-py3-none-manylinux2014_aarch64.whl", hash = "sha256:5847f1d6e5b757f1d2b3991a01082a44aad6f10ab3c5c0213fa3e25bddc25a13", size = 23162955, upload-time = "2024-10-01T16:59:50.922Z" },
@@ -365,8 +302,8 @@ name = "nvidia-cuda-nvrtc-cu12"
 version = "12.8.93"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/05/6b/32f747947df2da6994e999492ab306a903659555dddc0fbdeb9d71f75e52/nvidia_cuda_nvrtc_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hash = "sha256:a7756528852ef889772a84c6cd89d41dfa74667e24cca16bb31f8f061e3e9994", size = 88040029, upload-time = "2025-03-07T01:42:13.562Z" },
@@ -389,8 +326,8 @@ name = "nvidia-cuda-runtime-cu12"
 version = "12.6.77"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/8f/ea/590b2ac00d772a8abd1c387a92b46486d2679ca6622fd25c18ff76265663/nvidia_cuda_runtime_cu12-12.6.77-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:6116fad3e049e04791c0256a9778c16237837c08b27ed8c8401e2e45de8d60cd", size = 908052, upload-time = "2024-11-20T17:35:19.905Z" },
@@ -405,8 +342,8 @@ name = "nvidia-cuda-runtime-cu12"
 version = "12.8.90"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7c/75/f865a3b236e4647605ea34cc450900854ba123834a5f1598e160b9530c3a/nvidia_cuda_runtime_cu12-12.8.90-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:52bf7bbee900262ffefe5e9d5a2a69a30d97e2bc5bb6cc866688caa976966e3d", size = 965265, upload-time = "2025-03-07T01:39:43.533Z" },
@@ -419,8 +356,8 @@ name = "nvidia-cudnn-cu12"
 version = "9.10.2.21"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "nvidia-cublas-cu12", version = "12.6.4.1", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'extra-13-conformer-asr-cu126' or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130')" },
-    { name = "nvidia-cublas-cu12", version = "12.8.4.1", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'extra-13-conformer-asr-cu128' or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cpu' and extra != 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130')" },
+    { name = "nvidia-cublas-cu12", version = "12.6.4.1", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'extra-9-zipformer-cu126' or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130')" },
+    { name = "nvidia-cublas-cu12", version = "12.8.4.1", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'extra-9-zipformer-cu128' or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130')" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/fa/41/e79269ce215c857c935fd86bcfe91a451a584dfc27f1e068f568b9ad1ab7/nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:c9132cc3f8958447b4910a1720036d9eff5928cc3179b0a51fb6d167c6cc87d8", size = 705026878, upload-time = "2025-06-06T21:52:51.348Z" },
@@ -459,8 +396,8 @@ name = "nvidia-cufft-cu12"
 version = "11.3.0.4"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 dependencies = [
     { name = "nvidia-nvjitlink-cu12", version = "12.6.85", source = { registry = "https://pypi.org/simple" } },
@@ -478,8 +415,8 @@ name = "nvidia-cufft-cu12"
 version = "11.3.3.83"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 dependencies = [
     { name = "nvidia-nvjitlink-cu12", version = "12.8.93", source = { registry = "https://pypi.org/simple" } },
@@ -504,8 +441,8 @@ name = "nvidia-cufile-cu12"
 version = "1.11.1.6"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b2/66/cc9876340ac68ae71b15c743ddb13f8b30d5244af344ec8322b449e35426/nvidia_cufile_cu12-1.11.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:cc23469d1c7e52ce6c1d55253273d32c565dd22068647f3aa59b3c6b005bf159", size = 1142103, upload-time = "2024-11-20T17:42:11.83Z" },
@@ -517,8 +454,8 @@ name = "nvidia-cufile-cu12"
 version = "1.13.1.3"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/bb/fe/1bcba1dfbfb8d01be8d93f07bfc502c93fa23afa6fd5ab3fc7c1df71038a/nvidia_cufile_cu12-1.13.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:1d069003be650e131b21c932ec3d8969c1715379251f8d23a1860554b1cb24fc", size = 1197834, upload-time = "2025-03-07T01:45:50.723Z" },
@@ -540,8 +477,8 @@ name = "nvidia-curand-cu12"
 version = "10.3.7.77"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/42/ac/36543605358a355632f1a6faa3e2d5dfb91eab1e4bc7d552040e0383c335/nvidia_curand_cu12-10.3.7.77-py3-none-manylinux2014_aarch64.whl", hash = "sha256:6e82df077060ea28e37f48a3ec442a8f47690c7499bff392a5938614b56c98d8", size = 56289881, upload-time = "2024-10-01T17:04:18.981Z" },
@@ -556,8 +493,8 @@ name = "nvidia-curand-cu12"
 version = "10.3.9.90"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/45/5e/92aa15eca622a388b80fbf8375d4760738df6285b1e92c43d37390a33a9a/nvidia_curand_cu12-10.3.9.90-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:dfab99248034673b779bc6decafdc3404a8a6f502462201f2f31f11354204acd", size = 63625754, upload-time = "2025-03-07T01:46:10.735Z" },
@@ -585,8 +522,8 @@ name = "nvidia-cusolver-cu12"
 version = "11.7.1.2"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 dependencies = [
     { name = "nvidia-cublas-cu12", version = "12.6.4.1", source = { registry = "https://pypi.org/simple" } },
@@ -606,8 +543,8 @@ name = "nvidia-cusolver-cu12"
 version = "11.7.3.90"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 dependencies = [
     { name = "nvidia-cublas-cu12", version = "12.8.4.1", source = { registry = "https://pypi.org/simple" } },
@@ -638,8 +575,8 @@ name = "nvidia-cusparse-cu12"
 version = "12.5.4.2"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 dependencies = [
     { name = "nvidia-nvjitlink-cu12", version = "12.6.85", source = { registry = "https://pypi.org/simple" } },
@@ -657,8 +594,8 @@ name = "nvidia-cusparse-cu12"
 version = "12.5.8.93"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 dependencies = [
     { name = "nvidia-nvjitlink-cu12", version = "12.8.93", source = { registry = "https://pypi.org/simple" } },
@@ -722,8 +659,8 @@ name = "nvidia-nvjitlink-cu12"
 version = "12.6.85"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/9d/d7/c5383e47c7e9bf1c99d5bd2a8c935af2b6d705ad831a7ec5c97db4d82f4f/nvidia_nvjitlink_cu12-12.6.85-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hash = "sha256:eedc36df9e88b682efe4309aa16b5b4e78c2407eac59e8c10a6a47535164369a", size = 19744971, upload-time = "2024-11-20T17:46:53.366Z" },
@@ -736,8 +673,8 @@ name = "nvidia-nvjitlink-cu12"
 version = "12.8.93"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f6/74/86a07f1d0f42998ca31312f998bd3b9a7eff7f52378f4f270c8679c77fb9/nvidia_nvjitlink_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hash = "sha256:81ff63371a7ebd6e6451970684f916be2eab07321b73c9d244dc2b4da7f73b88", size = 39254836, upload-time = "2025-03-07T01:49:55.661Z" },
@@ -778,8 +715,8 @@ name = "nvidia-nvtx-cu12"
 version = "12.6.77"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b9/93/80f8a520375af9d7ee44571a6544653a176e53c2b8ccce85b97b83c2491b/nvidia_nvtx_cu12-12.6.77-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:f44f8d86bb7d5629988d61c8d3ae61dddb2015dee142740536bc7481b022fe4b", size = 90549, upload-time = "2024-11-20T17:38:17.387Z" },
@@ -794,8 +731,8 @@ name = "nvidia-nvtx-cu12"
 version = "12.8.90"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/10/c0/1b303feea90d296f6176f32a2a70b5ef230f9bdeb3a72bddb0dc922dc137/nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:d7ad891da111ebafbf7e015d34879f7112832fc239ff0d7d776b6cb685274615", size = 91161, upload-time = "2025-03-07T01:42:23.922Z" },
@@ -873,7 +810,7 @@ name = "pytest"
 version = "9.0.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", marker = "sys_platform == 'win32' or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130')" },
+    { name = "colorama", marker = "sys_platform == 'win32' or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130')" },
     { name = "iniconfig" },
     { name = "packaging" },
     { name = "pluggy" },
@@ -1004,8 +941,8 @@ name = "torch"
 version = "2.9.1+cpu"
 source = { registry = "https://download.pytorch.org/whl/cpu" }
 resolution-markers = [
-    "(platform_machine != 'aarch64' and sys_platform == 'linux') or (sys_platform != 'darwin' and sys_platform != 'linux')",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "(python_full_version >= '3.15' and sys_platform == 'linux') or (platform_machine != 'aarch64' and sys_platform == 'linux') or (platform_python_implementation != 'CPython' and sys_platform == 'linux') or (sys_platform != 'darwin' and sys_platform != 'linux')",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 dependencies = [
     { name = "filelock", marker = "sys_platform != 'darwin'" },
@@ -1037,8 +974,8 @@ name = "torch"
 version = "2.9.1+cu126"
 source = { registry = "https://download.pytorch.org/whl/cu126" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 dependencies = [
     { name = "filelock" },
@@ -1085,8 +1022,8 @@ name = "torch"
 version = "2.9.1+cu128"
 source = { registry = "https://download.pytorch.org/whl/cu128" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 dependencies = [
     { name = "filelock" },
@@ -1133,8 +1070,8 @@ name = "torch"
 version = "2.9.1+cu130"
 source = { registry = "https://download.pytorch.org/whl/cu130" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 dependencies = [
     { name = "filelock" },
@@ -1181,12 +1118,12 @@ name = "torchaudio"
 version = "2.9.1"
 source = { registry = "https://download.pytorch.org/whl/cpu" }
 resolution-markers = [
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
     "sys_platform == 'darwin'",
 ]
 dependencies = [
-    { name = "torch", version = "2.9.1", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(sys_platform == 'darwin' and extra == 'extra-13-conformer-asr-cpu') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130')" },
-    { name = "torch", version = "2.9.1+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(platform_machine == 'aarch64' and sys_platform == 'linux' and extra == 'extra-13-conformer-asr-cpu') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (platform_machine != 'aarch64' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (sys_platform != 'linux' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130') or (extra != 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu128') or (extra != 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu126' and extra == 'extra-13-conformer-asr-cu130') or (extra != 'extra-13-conformer-asr-cpu' and extra == 'extra-13-conformer-asr-cu128' and extra == 'extra-13-conformer-asr-cu130')" },
+    { name = "torch", version = "2.9.1", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(sys_platform == 'darwin' and extra == 'extra-9-zipformer-cpu') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130')" },
+    { name = "torch", version = "2.9.1+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cpu') or (python_full_version >= '3.15' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (python_full_version >= '3.15' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (python_full_version >= '3.15' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (extra != 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (extra != 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (extra != 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130')" },
 ]
 wheels = [
     { url = "https://download.pytorch.org/whl/cpu/torchaudio-2.9.1-cp313-cp313-macosx_12_0_arm64.whl", hash = "sha256:1c521e9f70fab2e825f6b831ac314a79dc37f51c8d11cd5498c0f3c880a122e1" },
@@ -1204,10 +1141,10 @@ name = "torchaudio"
 version = "2.9.1"
 source = { registry = "https://download.pytorch.org/whl/cu126" }
 resolution-markers = [
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 dependencies = [
-    { name = "torch", version = "2.9.1+cu126", source = { registry = "https://download.pytorch.org/whl/cu126" }, marker = "platform_machine == 'aarch64' and sys_platform == 'linux'" },
+    { name = "torch", version = "2.9.1+cu126", source = { registry = "https://download.pytorch.org/whl/cu126" }, marker = "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'" },
 ]
 wheels = [
     { url = "https://download.pytorch.org/whl/cu126/torchaudio-2.9.1-cp313-cp313-manylinux_2_28_aarch64.whl", hash = "sha256:d0080abd534063af32cf69523bd8410491b56c9f7f27ed644edeb97e1eb24a33" },
@@ -1221,10 +1158,10 @@ name = "torchaudio"
 version = "2.9.1"
 source = { registry = "https://download.pytorch.org/whl/cu128" }
 resolution-markers = [
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 dependencies = [
-    { name = "torch", version = "2.9.1+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "platform_machine == 'aarch64' and sys_platform == 'linux'" },
+    { name = "torch", version = "2.9.1+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'" },
 ]
 wheels = [
     { url = "https://download.pytorch.org/whl/cu128/torchaudio-2.9.1-cp313-cp313-manylinux_2_28_aarch64.whl", hash = "sha256:ea6fe3b9525493df0a5eb5eed5c22925065b5830f6999980ed76bb36c4592d34" },
@@ -1238,10 +1175,10 @@ name = "torchaudio"
 version = "2.9.1"
 source = { registry = "https://download.pytorch.org/whl/cu130" }
 resolution-markers = [
-    "platform_machine == 'aarch64' and sys_platform == 'linux'",
+    "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'",
 ]
 dependencies = [
-    { name = "torch", version = "2.9.1+cu130", source = { registry = "https://download.pytorch.org/whl/cu130" }, marker = "platform_machine == 'aarch64' and sys_platform == 'linux'" },
+    { name = "torch", version = "2.9.1+cu130", source = { registry = "https://download.pytorch.org/whl/cu130" }, marker = "python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux'" },
 ]
 wheels = [
     { url = "https://download.pytorch.org/whl/cu130/torchaudio-2.9.1-cp313-cp313-manylinux_2_28_aarch64.whl", hash = "sha256:5ef7cafc15785a0a737b325a10d0817d9490d8d58402abd20e404993c20ef32e" },
@@ -1255,10 +1192,10 @@ name = "torchaudio"
 version = "2.9.1+cpu"
 source = { registry = "https://download.pytorch.org/whl/cpu" }
 resolution-markers = [
-    "(platform_machine != 'aarch64' and sys_platform == 'linux') or (sys_platform != 'darwin' and sys_platform != 'linux')",
+    "(python_full_version >= '3.15' and sys_platform == 'linux') or (platform_machine != 'aarch64' and sys_platform == 'linux') or (platform_python_implementation != 'CPython' and sys_platform == 'linux') or (sys_platform != 'darwin' and sys_platform != 'linux')",
 ]
 dependencies = [
-    { name = "torch", version = "2.9.1+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(platform_machine != 'aarch64' and sys_platform == 'linux') or (sys_platform != 'darwin' and sys_platform != 'linux')" },
+    { name = "torch", version = "2.9.1+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(python_full_version >= '3.15' and sys_platform == 'linux') or (platform_machine != 'aarch64' and sys_platform == 'linux') or (platform_python_implementation != 'CPython' and sys_platform == 'linux') or (sys_platform != 'darwin' and sys_platform != 'linux')" },
 ]
 wheels = [
     { url = "https://download.pytorch.org/whl/cpu/torchaudio-2.9.1%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:c3cb189e9b30ff639535c1152056cc2523aecf139978f2b9b89109e2d376909e" },
@@ -1276,10 +1213,10 @@ name = "torchaudio"
 version = "2.9.1+cu126"
 source = { registry = "https://download.pytorch.org/whl/cu126" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
 ]
 dependencies = [
-    { name = "torch", version = "2.9.1+cu126", source = { registry = "https://download.pytorch.org/whl/cu126" }, marker = "platform_machine != 'aarch64' or sys_platform != 'linux'" },
+    { name = "torch", version = "2.9.1+cu126", source = { registry = "https://download.pytorch.org/whl/cu126" }, marker = "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'" },
 ]
 wheels = [
     { url = "https://download.pytorch.org/whl/cu126/torchaudio-2.9.1%2Bcu126-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:a49c73060300cff2575d15b4c7dc435a69a2c6827e47a907e4537e7413e57fe8" },
@@ -1297,10 +1234,10 @@ name = "torchaudio"
 version = "2.9.1+cu128"
 source = { registry = "https://download.pytorch.org/whl/cu128" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
 ]
 dependencies = [
-    { name = "torch", version = "2.9.1+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "platform_machine != 'aarch64' or sys_platform != 'linux'" },
+    { name = "torch", version = "2.9.1+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'" },
 ]
 wheels = [
     { url = "https://download.pytorch.org/whl/cu128/torchaudio-2.9.1%2Bcu128-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:52297b7dfb7c42e311385572bc9c0186e602ea1a5f20c42923765baea99aff83" },
@@ -1318,10 +1255,10 @@ name = "torchaudio"
 version = "2.9.1+cu130"
 source = { registry = "https://download.pytorch.org/whl/cu130" }
 resolution-markers = [
-    "platform_machine != 'aarch64' or sys_platform != 'linux'",
+    "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'",
 ]
 dependencies = [
-    { name = "torch", version = "2.9.1+cu130", source = { registry = "https://download.pytorch.org/whl/cu130" }, marker = "platform_machine != 'aarch64' or sys_platform != 'linux'" },
+    { name = "torch", version = "2.9.1+cu130", source = { registry = "https://download.pytorch.org/whl/cu130" }, marker = "python_full_version >= '3.15' or platform_machine != 'aarch64' or platform_python_implementation != 'CPython' or sys_platform != 'linux'" },
 ]
 wheels = [
     { url = "https://download.pytorch.org/whl/cu130/torchaudio-2.9.1%2Bcu130-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:59b414fa77f8908c2e8e13866169a0374b554085f1a56b99ff511a28c322be1a" },
@@ -1370,4 +1307,67 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/20/28/e6f1a6f655d620846bd9df527390ecc26b3805a0c5989048c210e22c5ca9/virtualenv-20.35.4.tar.gz", hash = "sha256:643d3914d73d3eeb0c552cbb12d7e82adf0e504dbf86a3182f8771a153a1971c", size = 6028799, upload-time = "2025-10-29T06:57:40.511Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/79/0c/c05523fa3181fdf0c9c52a6ba91a23fbf3246cc095f26f6516f9c60e6771/virtualenv-20.35.4-py3-none-any.whl", hash = "sha256:c21c9cede36c9753eeade68ba7d523529f228a403463376cf821eaae2b650f1b", size = 6005095, upload-time = "2025-10-29T06:57:37.598Z" },
+]
+
+[[package]]
+name = "zipformer"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "einops" },
+]
+
+[package.optional-dependencies]
+cpu = [
+    { name = "torch", version = "2.9.1", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(sys_platform == 'darwin' and extra == 'extra-9-zipformer-cpu') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130')" },
+    { name = "torch", version = "2.9.1+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(sys_platform != 'darwin' and extra == 'extra-9-zipformer-cpu') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130')" },
+    { name = "torchaudio", version = "2.9.1", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cpu') or (python_full_version >= '3.15' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (python_full_version >= '3.15' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (python_full_version >= '3.15' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (sys_platform == 'darwin' and extra == 'extra-9-zipformer-cpu') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (sys_platform == 'darwin' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (sys_platform == 'darwin' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (sys_platform == 'darwin' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (extra != 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (extra != 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (extra != 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130')" },
+    { name = "torchaudio", version = "2.9.1+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(python_full_version >= '3.15' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cpu') or (python_full_version < '3.15' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (python_full_version < '3.15' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (python_full_version < '3.15' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cpu') or (platform_python_implementation != 'CPython' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cpu') or (sys_platform != 'darwin' and sys_platform != 'linux' and extra == 'extra-9-zipformer-cpu') or (sys_platform == 'darwin' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (sys_platform == 'darwin' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (sys_platform == 'darwin' and extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (sys_platform == 'darwin' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (sys_platform == 'darwin' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (sys_platform == 'darwin' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (extra != 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (extra != 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (extra != 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130')" },
+]
+cu126 = [
+    { name = "torch", version = "2.9.1+cu126", source = { registry = "https://download.pytorch.org/whl/cu126" } },
+    { name = "torchaudio", version = "2.9.1", source = { registry = "https://download.pytorch.org/whl/cu126" }, marker = "(python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cu126') or (python_full_version >= '3.15' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (python_full_version >= '3.15' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (extra != 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130')" },
+    { name = "torchaudio", version = "2.9.1+cu126", source = { registry = "https://download.pytorch.org/whl/cu126" }, marker = "(python_full_version >= '3.15' and extra == 'extra-9-zipformer-cu126') or (python_full_version < '3.15' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (python_full_version < '3.15' and extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (python_full_version < '3.15' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu126') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu126') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cu126') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (extra != 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130')" },
+]
+cu128 = [
+    { name = "torch", version = "2.9.1+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" } },
+    { name = "torchaudio", version = "2.9.1", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "(python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cu128') or (python_full_version >= '3.15' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130')" },
+    { name = "torchaudio", version = "2.9.1+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "(python_full_version >= '3.15' and extra == 'extra-9-zipformer-cu128') or (python_full_version < '3.15' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu128') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu128') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130')" },
+]
+cu130 = [
+    { name = "torch", version = "2.9.1+cu130", source = { registry = "https://download.pytorch.org/whl/cu130" } },
+    { name = "torchaudio", version = "2.9.1", source = { registry = "https://download.pytorch.org/whl/cu130" }, marker = "(python_full_version < '3.15' and platform_machine == 'aarch64' and platform_python_implementation == 'CPython' and sys_platform == 'linux' and extra == 'extra-9-zipformer-cu130') or (python_full_version >= '3.15' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130')" },
+    { name = "torchaudio", version = "2.9.1+cu130", source = { registry = "https://download.pytorch.org/whl/cu130" }, marker = "(python_full_version >= '3.15' and extra == 'extra-9-zipformer-cu130') or (python_full_version < '3.15' and extra == 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (platform_machine != 'aarch64' and extra == 'extra-9-zipformer-cu130') or (platform_python_implementation != 'CPython' and extra == 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra != 'extra-9-zipformer-cu128' and extra == 'extra-9-zipformer-cu130') or (sys_platform != 'linux' and extra != 'extra-9-zipformer-cpu' and extra != 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu126') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cpu' and extra == 'extra-9-zipformer-cu130') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu128') or (extra == 'extra-9-zipformer-cu126' and extra == 'extra-9-zipformer-cu130')" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "hypothesis" },
+    { name = "pre-commit" },
+    { name = "pyright" },
+    { name = "pytest" },
+    { name = "ruff" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "einops", specifier = ">=0.8.1" },
+    { name = "torch", marker = "extra == 'cpu'", specifier = ">=2.8.0", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "zipformer", extra = "cpu" } },
+    { name = "torch", marker = "extra == 'cu126'", specifier = ">=2.8.0", index = "https://download.pytorch.org/whl/cu126", conflict = { package = "zipformer", extra = "cu126" } },
+    { name = "torch", marker = "extra == 'cu128'", specifier = ">=2.8.0", index = "https://download.pytorch.org/whl/cu128", conflict = { package = "zipformer", extra = "cu128" } },
+    { name = "torch", marker = "extra == 'cu130'", specifier = ">=2.8.0", index = "https://download.pytorch.org/whl/cu130", conflict = { package = "zipformer", extra = "cu130" } },
+    { name = "torchaudio", marker = "extra == 'cpu'", specifier = ">=2.9.0", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "zipformer", extra = "cpu" } },
+    { name = "torchaudio", marker = "extra == 'cu126'", specifier = ">=2.9.0", index = "https://download.pytorch.org/whl/cu126", conflict = { package = "zipformer", extra = "cu126" } },
+    { name = "torchaudio", marker = "extra == 'cu128'", specifier = ">=2.9.0", index = "https://download.pytorch.org/whl/cu128", conflict = { package = "zipformer", extra = "cu128" } },
+    { name = "torchaudio", marker = "extra == 'cu130'", specifier = ">=2.9.0", index = "https://download.pytorch.org/whl/cu130", conflict = { package = "zipformer", extra = "cu130" } },
+]
+provides-extras = ["cpu", "cu126", "cu128", "cu130"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "hypothesis", specifier = ">=6.148.2" },
+    { name = "pre-commit", specifier = ">=4.4.0" },
+    { name = "pyright", specifier = ">=1.1.407" },
+    { name = "pytest", specifier = ">=9.0.1" },
+    { name = "ruff", specifier = ">=0.14.5" },
 ]
