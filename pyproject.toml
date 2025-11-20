@@ -1,0 +1,114 @@
+[project]
+name = "conformer-asr"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "einops>=0.8.1",
+]
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.148.2",
+    "pre-commit>=4.4.0",
+    "pyright>=1.1.407",
+    "pytest>=9.0.1",
+    "ruff>=0.14.5",
+]
+
+[project.optional-dependencies]
+cpu = [
+    "torch>=2.8.0",
+    "torchaudio>=2.9.0",
+]
+cu126 = [
+    "torch>=2.8.0",
+    "torchaudio>=2.9.0",
+]
+cu128 = [
+    "torch>=2.8.0",
+    "torchaudio>=2.9.0",
+]
+cu130 = [
+    "torch>=2.8.0",
+    "torchaudio>=2.9.0",
+]
+
+[tool.uv]
+default-groups = []
+conflicts = [
+    [
+        { extra = "cpu" },
+        { extra = "cu126" },
+        { extra = "cu128" },
+        { extra = "cu130" },
+    ],
+]
+
+[tool.uv.sources]
+torch = [
+    {index = "pytorch-cpu", extra = "cpu"},
+    {index = "pytorch-cu126", extra = "cu126"},
+    {index = "pytorch-cu128", extra = "cu128"},
+    {index = "pytorch-cu130", extra = "cu130"},
+]
+torchaudio = [
+    {index = "pytorch-cpu", extra = "cpu"},
+    {index = "pytorch-cu126", extra = "cu126"},
+    {index = "pytorch-cu128", extra = "cu128"},
+    {index = "pytorch-cu130", extra = "cu130"},
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.pyright]
+include = ["**/src"]
+exclude = [
+    "**/configs"
+]
+venvPath = "."
+venv = ".venv"
+reportMissingImports = true
+reportUnusedVariable = true
+reportMissingParameterType = "error"
+typeCheckingMode = "strict"
+
+[tool.pytest]
+minversion = "9.0"
+addopts = ["-v"]
+testpaths = [
+    "tests"
+]
+
+[tool.ruff.lint]
+exclude = [
+    ".git",
+    "__pycache__",
+    "**/configs/*",
+    "old,build",
+    "dist"
+]
+select = ["D", "E", "F", "N", "ANN", "D"]
+fixable = ["ALL"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["D"]
