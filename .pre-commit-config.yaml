@@ -1,0 +1,42 @@
+repos:
+- repo: https://github.com/astral-sh/uv-pre-commit
+  rev: 0.9.10
+  hooks:
+    - id: uv-lock
+    - id: uv-sync
+      args: ["--locked", "--all-packages"]
+    - id: uv-export
+      always_run: true
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v6.0.0
+  hooks:
+    - id: check-toml
+    - id: check-json
+    - id: check-merge-conflict
+    - id: check-yaml
+    - id: check-added-large-files
+    - id: check-case-conflict
+    - id: check-docstring-first
+    - id: check-symlinks
+    - id: debug-statements
+    - id: mixed-line-ending
+    - id: trailing-whitespace
+
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.14.5
+  hooks:
+    - id: ruff-check
+      args: [ --fix ]
+    - id: ruff-format
+
+- repo: https://github.com/jsh9/pydoclint
+  rev: 0.8.1
+  hooks:
+    - id: pydoclint
+      args: [--style=google]
+
+- repo: https://github.com/RobertCraigie/pyright-python
+  rev: v1.1.407
+  hooks:
+    - id: pyright

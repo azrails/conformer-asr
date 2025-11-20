@@ -1,0 +1,46 @@
+name: Repo checks
+
+on:
+  pull_request:
+    branches: [ master ]
+  push:
+    branches: [ master ]
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        runtime-variant: [ cpu ]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Setup
+        uses: actions/setup-python@v6
+        with:
+          python-version-file: ".python-version"
+          cache: "none"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Install project
+        run: uv sync --locked --dev --extra ${{matrix.runtime-variant}}
+
+      - name: Lint
+        run: uv run ruff check
+
+      - name: Format
+        run: uv run ruff format --check
+
+      - name: Typing
+        run: uv run pyright
+
+      - name: Test
+        run: uv run pytest
